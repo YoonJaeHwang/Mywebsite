@@ -1,0 +1,262 @@
+body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  dl,
+  dt,
+  dd,
+  table,
+  th,
+  td,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  button,
+  select {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+    background-image: url("../img/index/login_background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    display: flex;
+    height: 100%;
+  }
+
+  .prev {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+  }
+
+  .sign_up {
+    align-items: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.60);
+  }
+
+  .sign_up>.sign_up_title {
+    font-family: 'Gugi', cursive;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: auto;
+  }
+
+  .sign_up .sign_up_id,
+  .sign_up_pw,
+  .sign_up_rp,
+  .sign_up_nick,
+  .sign_up_mail,
+  .sign_up_phonenumber,
+  .sign_up_join {
+    text-align: center;
+  }
+
+  .sign_up .id,
+  .pw,
+  .rp,
+  .nick,
+  .mail,
+  .space,
+  .pn {
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: 'Do Hyeon', sans-serif;
+    padding-bottom: 5px;
+  }
+
+  .sign_up_id>input::placeholder {
+    color: white;
+  }
+
+  .sign_up_pw>input::placeholder {
+    color: white;
+  }
+
+  .sign_up_rp>input::placeholder {
+    color: white;
+  }
+
+  .sign_up_nick>input::placeholder {
+    color: white;
+  }
+
+  .sign_up_mail>input::placeholder {
+    color: white;
+  }
+
+  .sign_up_phonenumber>input::placeholder {
+    color: white;
+  }
+
+  .sign_up>.sign_up_join>.join {
+    background-color: #2E9AFE;
+    color: white;
+    border: 0;
+    font-family: 'Gugi', cursive;
+  }
+
+  .sign_up>.sign_up_join>.join:hover {
+    background-color: #00FFBF;
+    color: black;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+@media screen and (max-width:1080px) {
+  /* ios에서의 input태그 초기화 */
+  input {
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+  }
+
+  .prev img {
+    width: 32px;
+  }
+
+  .sign_up {
+    padding: 20px 30px;
+  }
+
+  .sign_up>.sign_up_title {
+    width: 250px;
+  }
+
+  .sign_up>.sign_up_title>span {
+    font-size: 20px;
+  }
+
+  .sign_up .sign_up_id,
+  .sign_up_pw,
+  .sign_up_rp,
+  .sign_up_nick,
+  .sign_up_mail,
+  .sign_up_phonenumber,
+  .sign_up_join {
+    margin: 10px auto;
+  }
+
+  .sign_up .id,
+  .pw,
+  .rp,
+  .nick,
+  .mail,
+  .space,
+  .pn {
+    font-size: 20px;
+    width: 250px;
+    padding-top: 5px;
+  }
+
+  .sign_up .id:focus,
+  .pw:focus,
+  .rp:focus,
+  .nick:focus,
+  .mail:focus,
+  .space:focus,
+  .pn:focus {
+    outline: none;
+  }
+
+  .sign_up>.sign_up_mail>.text {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 8px;
+  }
+
+  .sign_up>.sign_up_join {
+    width: 200px;
+  }
+
+  .sign_up>.sign_up_join>.join {
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 5px;
+  }
+}
+
+/* pc용 css */
+@media all and (min-width:1081px) {
+  .prev img {
+    width: 64px;
+  }
+
+  .sign_up {
+    padding: 30px 60px;
+  }
+
+  .sign_up>.sign_up_title {
+    width: 700px;
+  }
+
+  .sign_up>.sign_up_title>span {
+    font-size: 60px;
+  }
+
+  .sign_up .sign_up_id,
+  .sign_up_pw,
+  .sign_up_rp,
+  .sign_up_nick,
+  .sign_up_mail,
+  .sign_up_phonenumber,
+  .sign_up_join {
+    margin: 20px auto;
+    width: 700px;
+  }
+
+  .sign_up .id,
+  .pw,
+  .rp,
+  .nick,
+  .mail,
+  .space,
+  .pn {
+    font-size: 30px;
+    width: 580px;
+    padding-top: 10px;
+  }
+
+  .sign_up .id:focus,
+  .pw:focus,
+  .rp:focus,
+  .nick:focus,
+  .mail:focus,
+  .space:focus,
+  .pn:focus {
+    outline: none;
+  }
+
+  .sign_up>.sign_up_join {
+    width: 600px;
+    margin: 10px auto;
+  }
+
+  .sign_up>.sign_up_join>.join {
+    width: 500px;
+    height: 60px;
+    font-size: 40px;
+    border-radius: 10px;
+  }
+}

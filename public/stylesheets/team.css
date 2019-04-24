@@ -1,0 +1,637 @@
+@media screen and (max-width:767px) {
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  dl,
+  dt,
+  dd,
+  table,
+  th,
+  td,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  button,
+  select {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  /* 제목 좌,우 선긋기 */
+  .League_title {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gugi', cursive;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 12px;
+    margin: 8px 0px;
+  }
+
+  .League_title::before,
+  .League_title::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    margin: 0px 16px;
+  }
+
+  .block_contents {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .block_contents ul {
+    overflow: hidden;
+    margin-bottom: 60px;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+  }
+
+  .block_contents ul li {
+    position: relative;
+    padding: 20px 20px 16px;
+    margin: auto;
+    margin-bottom: 16px;
+    width: 90%;
+    background: #f5f5f5;
+    box-sizing: border-box;
+  }
+
+  /* 팀 이름  */
+  .block_contents ul li a span {
+    display: block;
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    font-size: 16px;
+    line-height: 34px;
+  }
+
+  .Team_contents {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  #menu_ul li img {
+    border: 0px;
+    vertical-align: top;
+    text-align: center;
+    width: 100%;
+    height: 250px;
+    padding-bottom: 30px;
+  }
+
+  #menu_ul li img:hover {
+    -webkit-transform: scale(1.1);
+    -webkit-transition: transform .35s;
+  }
+
+  /* 팀 설명 */
+  .detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+  }
+
+  .detail .detail_top {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .detail .detail_top h2 {
+    font-size: 26px;
+    color: #202023;
+    font-weight: 600;
+    border-bottom: solid 2px #202023;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+  }
+
+  .detail .detail_top p {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+
+  .detail .detail_top .detail_close {
+    position: absolute;
+    top: 2%;
+    right: -11%;
+  }
+
+  .detail .detail_low {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: table;
+    z-index: 10;
+    background: #f8f8f8;
+    padding: 5px 0;
+  }
+
+  .detail .detail_low .detail_low_post {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .detail .detail_low .detail_low_post dl {
+    font-size: 15px;
+    font-family: 'Jua', sans-serif;
+  }
+
+  .detail .detail_low .detail_low_post dt {
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  .detail .detail_low .detail_low_post dd {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  #menu_ul .detail::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    opacity: 0.9;
+    top: 0;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width: 1024px) {
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  dl,
+  dt,
+  dd,
+  table,
+  th,
+  td,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  button,
+  select {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  dl,
+  dt,
+  dd,
+  table,
+  th,
+  td,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  button,
+  select {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  /* 제목 좌,우 선긋기 */
+  .League_title {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gugi', cursive;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 12px;
+    margin: 8px 0px;
+  }
+
+  .League_title::before,
+  .League_title::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    margin: 0px 16px;
+  }
+
+  .block_contents {
+    width: 100%;
+  }
+
+  .block_contents ul {
+    overflow: hidden;
+    margin-bottom: 60px;
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+  }
+
+  .block_contents ul li {
+    position: relative;
+    padding: 30px 30px 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 40%;
+    background: #f5f5f5;
+  }
+
+  /* 팀 이름  */
+  .block_contents ul li a span {
+    display: block;
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    font-size: 16px;
+    line-height: 34px;
+  }
+
+  .Team_contents {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #menu_ul li img {
+    border: 0px;
+    vertical-align: top;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 30px;
+  }
+
+  #menu_ul li img:hover {
+    -webkit-transform: scale(1.1);
+    -webkit-transition: transform .35s;
+  }
+
+  /* 팀 설명 */
+  .detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+  }
+
+  .detail .detail_top {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .detail .detail_top h2 {
+    font-size: 26px;
+    color: #202023;
+    font-weight: 600;
+    border-bottom: solid 2px #202023;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+  }
+
+  .detail .detail_top p {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Gaegu', cursive;
+  }
+
+  .detail .detail_top .detail_close {
+    position: absolute;
+    top: 2%;
+    right: -11%;
+  }
+
+  .detail .detail_low {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: table;
+    z-index: 10;
+    background: #f8f8f8;
+    padding: 5px 0;
+  }
+
+  .detail .detail_low .detail_low_post {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .detail .detail_low .detail_low_post dl {
+    font-size: 15px;
+    font-family: 'Jua', sans-serif;
+  }
+
+  .detail .detail_low .detail_low_post dt {
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  .detail .detail_low .detail_low_post dd {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  #menu_ul .detail::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    opacity: 0.9;
+    top: 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  dl,
+  dt,
+  dd,
+  table,
+  th,
+  td,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  button,
+  select {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  body,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  ul,
+  ol,
+  li,
+  dl,
+  dt,
+  dd,
+  table,
+  th,
+  td,
+  form,
+  fieldset,
+  legend,
+  input,
+  textarea,
+  button,
+  select {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .League_title {
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Gugi', cursive;
+    margin: 80px 0px 40px 0px;
+  }
+
+  .block_contents {
+    width: 100%;
+  }
+
+  .block_contents ul {
+    overflow: hidden;
+    margin-bottom: 60px;
+    width: 100%;
+    position: relative;
+  }
+
+  .block_contents ul li {
+    position: relative;
+    padding: 10px 10px 16px;
+    margin: 0 10px 10px 0;
+    float: left;
+    background: #f5f5f5;
+    box-sizing: border-box;
+  }
+
+  /* 팀 이름  */
+  .block_contents ul li a span {
+    display: block;
+    text-align: center;
+    font-family: 'Gugi', cursive;
+    font-size: 16px;
+    line-height: 34px;
+  }
+
+  .Team_contents {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  #menu_ul li img {
+    border: 0px;
+    vertical-align: top;
+    text-align: center;
+    padding: 30px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  #menu_ul li img:hover {
+    -webkit-transform: scale(1.1);
+    -webkit-transition: transform .35s;
+  }
+
+  /* 팀 설명 */
+  .detail {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: none;
+  }
+
+  .detail .detail_top {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    z-index: 10;
+  }
+
+  .detail .detail_top h2 {
+    font-size: 26px;
+    color: #202023;
+    font-weight: 600;
+    border-bottom: solid 2px #202023;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+  }
+
+  .detail .detail_top p {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+
+  .detail .detail_top .detail_close {
+    position: absolute;
+    top: 2%;
+    right: -11%;
+  }
+
+  .detail .detail_low {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: table;
+    z-index: 10;
+    background: #f8f8f8;
+    padding: 5px 0;
+  }
+
+  .detail .detail_low .detail_low_post {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  .detail .detail_low .detail_low_post dl {
+    font-size: 15px;
+    font-family: 'Jua', sans-serif;
+  }
+
+  .detail .detail_low .detail_low_post dt {
+    display: inline-block;
+    font-weight: 300;
+  }
+
+  .detail .detail_low .detail_low_post dd {
+    display: inline-block;
+    font-weight: 600;
+  }
+
+  #menu_ul .detail::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFF;
+    opacity: 0.9;
+    top: 0;
+  }
+}

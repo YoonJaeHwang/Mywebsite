@@ -1,0 +1,86 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #0B0B3B;
+  text-align: center;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+.bottom_logo img {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+}
+
+.bottom_logo ul {
+  align-items: center;
+  list-style:none;
+}
+
+.bottom_copyright p {
+  color: white;
+}
+
+@media screen and (max-width: 1024px) {
+  .bottom_logo ul li {
+    padding: 0px 5px;
+    margin: 10px 0px;
+    display: inline-block;
+  }
+
+  .bottom_logo ul li p {
+    padding: 0px 10px;
+    color: white;
+    font-size: 16px;
+  }
+
+  .bottom_copyright {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .bottom_copyright p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .bottom_logo {
+    display: flex;
+  }
+
+  .bottom_logo ul {
+    display: flex;
+  }
+
+  .bottom_logo ul li {
+    padding: 0px 20px;
+    border-right: 1px solid #FFFFFF;
+  }
+
+  .bottom_logo ul li p {
+    margin: 0px;
+    color: white;
+    font-size: 14px;
+  }
+
+  .bottom_logo ul li p:hover {
+    color: #00FFBF;
+    cursor: pointer;
+  }
+
+  .bottom_copyright {
+    margin: auto 20px;
+  }
+
+  .bottom_copyright p {
+    font-size: 14px;
+  }
+}

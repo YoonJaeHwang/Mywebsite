@@ -1,0 +1,299 @@
+/* 모바일용 css */
+html {
+  height: 100%;
+}
+
+body {
+  background-image: url("../img/index/login_background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  text-align: center;
+  color: white;
+  margin: 0;
+  display: flex;
+  height: 100%;
+}
+
+/* ios에서의 input태그 초기화 */
+input {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+.prev {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.prev img {
+  width:32px;
+}
+
+.Login {
+  align-items: center;
+  margin: auto;
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, 0.49);
+}
+
+.Login>.Login_title {
+  font-family: 'Gugi', cursive;
+}
+
+.Login>.Login_title>span {
+  font-size: 40px;
+}
+
+.Login_text {
+  margin: 20px auto 10px auto;
+  position: relative;
+  width: 300px;
+}
+
+.Login>.Login_text>.id, .pw {
+  border: none;
+  border-bottom: 2px solid white;
+  padding: 10px 0px;
+  font-size: 20px;
+  width: 300px;
+  background-color: transparent;
+  color: white;
+  font-family: 'Gugi', cursive;
+}
+
+.Login>.Login_text>.id:focus, .pw:focus {
+  outline: none;
+}
+
+.Login>.Login_text>input::placeholder {
+  color: white;
+  font-family: 'Gugi', cursive;
+}
+
+.Login>.Login_text>.id~.id_line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #00FFBF;
+  transition: 0.6s;
+}
+
+.Login>.Login_text>.id:focus~.id_line {
+  width: 300px;
+  transition: 0.6s;
+}
+
+.Login>.Login_text>.pw~.pw_line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: #00FFBF;
+  transition: 0.6s;
+}
+
+.Login>.Login_text>.pw:focus~.pw_line {
+  width: 300px;
+  transition: 0.6s;
+}
+
+.Login>.Login_enter {
+  display: flex;
+  margin: auto;
+  width: max-content;
+  width: 300px;
+  height: 50px;
+}
+
+.Null {
+  flex: 1;
+}
+
+.Login>.Login_enter p {
+  cursor: pointer;
+  padding: 20px 10px 20px 8px;
+  margin: 0;
+  font-family: 'Gugi', cursive;
+  font-size: 10px;
+}
+
+.Login>.Login_enter p:hover {
+  color: #00FFBF;
+}
+
+.Login>.Login_button {
+  width: 300px;
+  margin: 10px auto;
+}
+
+.Login>.Login_button>.click {
+  width: 300px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #2E9AFE;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  font-family: 'Gugi', cursive;
+}
+
+.Login>.Login_button>.click:hover {
+  background-color: #00FFBF;
+  color: black;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* pc용 css */
+@media all and (min-width:960px) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    background-image: url("../img/index/login_background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    text-align: center;
+    color: white;
+    margin: 0;
+    display: flex;
+    height: 100%;
+  }
+
+  .prev {
+    position: absolute;
+    top: 2%;
+    left: 1%;
+  }
+
+  .prev img {
+    width:64px;
+  }
+
+  .Login {
+    align-items: center;
+    margin: auto;
+    padding: 80px 100px;
+    background-color: rgba(0, 0, 0, 0.49);
+  }
+
+  .Login>.Login_title {
+    font-family: 'Gugi', cursive;
+  }
+
+  .Login>.Login_title>span {
+    font-size: 90px;
+  }
+
+  .Login_text {
+    margin: 20px auto 10px auto;
+    position: relative;
+    width: 600px;
+  }
+
+  .Login>.Login_text>.id, .pw {
+    border: none;
+    border-bottom: 2px solid white;
+    padding: 20px 0px 10px 0px;
+    font-size: 30px;
+    width: 600px;
+    background-color: transparent;
+    color: white;
+    font-family: 'Gugi', cursive;
+  }
+
+  .Login>.Login_text>.id:focus, .pw:focus {
+    outline: none;
+  }
+
+  .Login>.Login_text>input::placeholder {
+    color: white;
+    font-family: 'Gugi', cursive;
+  }
+
+  .Login>.Login_text>.id~.id_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #00FFBF;
+    transition: 0.6s;
+  }
+
+  .Login>.Login_text>.id:focus~.id_line {
+    width: 600px;
+    transition: 0.6s;
+  }
+
+  .Login>.Login_text>.pw~.pw_line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #00FFBF;
+    transition: 0.6s;
+  }
+
+  .Login>.Login_text>.pw:focus~.pw_line {
+    width: 600px;
+    transition: 0.6s;
+  }
+
+  .Login>.Login_enter {
+    display: flex;
+    margin: auto;
+    width: max-content;
+    width: 600px;
+    height: 50px;
+  }
+
+  .Null {
+    flex: 1;
+  }
+
+  .Login>.Login_enter p {
+    cursor: pointer;
+    padding: 20px 10px 20px 8px;
+    margin: 0;
+    font-family: 'Gugi', cursive;
+    font-size: 20px;
+  }
+
+  .Login>.Login_enter p:hover {
+    color: #00FFBF;
+  }
+
+  .Login>.Login_button {
+    width: 600px;
+    margin: 10px auto;
+  }
+
+  .Login>.Login_button>.click {
+    width: 600px;
+    height: 80px;
+    font-size: 50px;
+    background-color: #2E9AFE;
+    color: white;
+    border: 0;
+    border-radius: 10px;
+    font-family: 'Gugi', cursive;
+  }
+
+  .Login>.Login_button>.click:hover {
+    background-color: #00FFBF;
+    color: black;
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}

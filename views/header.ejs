@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script> 
+  <script type="text/javascript" src="javascripts/scroll.js"></script>
+  <script type="text/javascript" src="javascripts/dropdown.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="menu">
+      <p class="topic">Premier League</p>
+      <p onclick="location.href = '/index'">HOME</p>
+      <p onclick="location.href = '/about'">About</p>
+      <p onclick="location.href = '/team'">Team</p>
+      <p onclick="location.href = '/history'">History</p>
+      <p onclick="location.href = '/ranking'">Ranking</p>
+    </div>
+    <div class="null"></div>
+    <div class="logo">
+      <p onclick="location.href = '/sign_in'">
+        <% if(sess) {%>
+          <%= sess %> 님
+        <% } else { %>
+          Sign_in
+        <% }%>
+        </p>
+    </div>
+  </header>
+
+  <header class="top_nav">
+    <h1 class="top_logo">Premier League</h1>
+    <div class="util">
+      <a>
+        <img src="img/index/menu.png" width="24px" height="24px" alt="메뉴">
+      </a>
+    </div>
+
+    <div class="gnb_wrap">
+      <ul class="main">
+        <li>
+          <a href="/index">Home</a>
+          <img src="img/index/right.png" onclick="location.href = '/index'" alt="더보기">
+        </li>
+        <li>
+          <a href="/about">About</a>
+          <img src="img/index/right.png" onclick="location.href = '/about'" alt="더보기">
+        </li>
+        <li>
+          <a href="/team">Team</a>
+          <img src="img/index/right.png" onclick="location.href = '/team'" alt="더보기">
+        </li>
+        <li>
+          <a href="/history">History</a>
+          <img src="img/index/right.png" onclick="location.href = '/history'" alt="더보기">
+        </li>
+        <li>
+          <a href="/ranking">Ranking</a>
+          <img src="img/index/right.png" onclick="location.href = '/ranking'" alt="더보기">
+        </li>
+        <li>
+          <a href="/sign_in">Sign_in</a>
+          <img src="img/index/right.png" onclick="location.href = '/sign_in'" alt="더보기">
+        </li>
+      </ul>
+    </div>
+  </header>
+</body>
+
+</html>

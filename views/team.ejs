@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee|Jua|Staatliches|Gugi|Gaegu" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/team.css">
+  <link rel="stylesheet" href="stylesheets/basic.css">
+  <link rel="stylesheet" href="stylesheets/footer.css">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="javascripts/showhide.js"></script>
+  <script type="text/javascript" src="javascripts/menu.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#headers").load("header.html"); // 원하는 파일 경로를 삽입하면 된다
+      $("#footers").load("footer.html"); // 추가 인클루드를 원할 경우 이런식으로 추가하면 된다 
+    });
+  </script>
+  <title>Premier League</title>
+</head>
+
+<body>
+<% include ./header.ejs %>
+
+<section>
+  <div class="League_title">
+    <h1>League Team</h1>
+  </div>
+
+  <div class="block_contents">
+    <div class="Team_contents">
+      <ul id="menu_ul">
+        <li>
+          <div class="detail" id="team_explain">
+            <div class="detail_top">
+              <h2>Manchester city</h2>
+              <div class="detail_close">
+                <a onclick=Manchester_city()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>잉글랜드 그레이터맨체스터주 맨체스터를 연고로 하여 2008년 9월 만수르 빈 자이드 알나하얀 소유의 아부다비 유나이티드 그룹이 구단을 매입하였고,막강한 자금력을 바탕으로
+                프리미어리그에서 2011-12, 13-14, 17-18시즌 3회 우승하였다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>펩 과르디올라</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>뱅상 콤파니</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>에티하드 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick=Manchester_city()>
+            <img src="img/England/Manchester_city.png">
+            <span>Manchester City</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain1">
+            <div class="detail_top">
+              <h2>Manchester United</h2>
+              <div class="detail_close">
+                <a onclick=Manchester_United()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>잉글랜드 그레이터맨체스터주 맨체스터를 연고로 맨체스터 유나이티드는 2010-11 시즌 프리미어리그 우승으로 잉글랜드 프로축구 역사상 19번째 1부 프로축구리그 우승을 기록해, 기존에
+                리버풀이 갖고 있던 기록과 같은 기록을 경신했다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>올레 군나르 솔셰르</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>안토니오 발렌시아</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>올드 트래포드</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick=Manchester_United()>
+            <img src="img/England/Manchester_United.png">
+            <span>Manchester United</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain2">
+            <div class="detail_top">
+              <h2>Chelsea FC</h2>
+              <div class="detail_close">
+                <a onclick=Chelsea()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>런던의 풀럼을 연고지로 첼시는 프리미어리그 6회, FA컵 8회, 리그 컵 5회, FA 커뮤니티 실드 4회, UEFA 컵 위너스컵 2회의 우승 경력이 있으며, UEFA 챔피언스리그,
+                UEFA 유로파리그, UEFA 슈퍼컵에서 각각 1회의 우승을 기록하였다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>마우리치오 사리</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>게리 케이힐</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>스탬퍼드 브릿지</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick=Chelsea()>
+            <img src="img/England/Chelsea_FC.png">
+            <span>Chelsea FC</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain3">
+            <div class="detail_top">
+              <h2>Arsenal FC</h2>
+              <div class="detail_close">
+                <a onclick=Arsenal()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>런던을 연고지로 아스널은 현재 잉글랜드에서 가장 성공한 클럽들 중 하나이며, 13번의 리그 우승을 이뤘고, FA컵에서 13번의 우승으로 맨체스터 유나이티드를 제치고 잉글랜드 최다 우승
+                기록을 가지고있다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>우나리 에메리</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>로랑 코시엘니</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>에미레이츠 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Arsenal()">
+            <img src="img/England/Arsenal.png">
+            <span>Arsenal FC</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain4">
+            <div class="detail_top">
+              <h2>Liverpool</h2>
+              <div class="detail_close">
+                <a onclick=Riverpool()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>잉글랜드 머지사이드주 리버풀을 연고로 리버풀은 현재 총 18회의 리그 우승을 했으며, 8번의 리그컵 우승, 7번의 FA컵우승, 5번의 UEFA 챔피언스리그 우승을 차지했는데
+                챔피언스리그 우승은 잉글랜드 내에서 역대 최다 우승 기록으로 기록되어 있다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>위르겐 클롭</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>조던 헨더슨</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>안필드</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Riverpool()">
+            <img src="img/England/Liverpool.png">
+            <span>Liverpool</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain5">
+            <div class="detail_top">
+              <h2>Tottenham</h2>
+              <div class="detail_close">
+                <a onclick=Tottenham()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>런던 헤링게이구 토트넘을 연고지로 1882년에 창단한 토트넘은 1901년 FA컵에서 첫 트로피를 들어 올렸는데, 이는 잉글리시 풋볼 리그 창립 이후 유일하게 논리그구단이 우승한
+                기록으로 남았다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>마우리시오 포체티노</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>위고 요리스</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>웸블리 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Tottenham()">
+            <img src="img/England/Tottenham_Hotspur.png">
+            <span>Tottenham</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain6">
+            <div class="detail_top">
+              <h2>Leicester City</h2>
+              <div class="detail_close">
+                <a onclick=Leicester_City()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>레스터를 연고지로 2015-16시즌 프리미어리그 우승을 차지하였다. FA컵에서는 결승에 4번이나 올라갔지만 한 번도 우승하지 못했다. 풋볼 리그 컵에서는 세번 우승하였고, 풋볼 리그
+                챔피언십으로 개편되기 전의 2부 리그에서 6회의 우승 기록했다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>클로드 퓌엘</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>웨스 모건</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>킹 파워 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Leicester_City()">
+            <img src="img/England/Leicester_City.png">
+            <span>Leicester City</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain7">
+            <div class="detail_top">
+              <h2>Everton</h2>
+              <div class="detail_close">
+                <a onclick=Everton()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>리버풀을 연고지로 잉글랜드 풋볼 리그 1부에서 9번 우승한 경력을 가지고 있다. 잉글랜드 축구 클럽 중 4번째로 많은 우승 기록이다. 현재 프리미어리그에 소속되어 있고, 프리미어리그
+                창설 이후 지금까지 강등당하고 있지 않는 클럽들 중 하나이다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>마르쿠 실바</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>필 자기엘카</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>구디슨 파크</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Everton()">
+            <img src="img/England/Everton.png">
+            <span>Everton</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain8">
+            <div class="detail_top">
+              <h2>Southampton</h2>
+              <div class="detail_close">
+                <a onclick=Southampton()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>남부 햄프셔주의 사우샘프턴을 연고지로 2005년 프리미어리그에서 강등된후 풋볼 리그 챔피언십에서 플레이하였으나, 2009년 풋볼 리그 1으로 강등되었고, 2011-12시즌 승격후 풋볼
+                리그 챔피언십에서 준우승을 하면서 프리미어리그로 승격을 했다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>랄프 하젠휘틀</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>오리올 로메우</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>세인트 메리스 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Southampton()">
+            <img src="img/England/Southampton.png">
+            <span>Southampton</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain9">
+            <div class="detail_top">
+              <h2>Newcastle United</h2>
+              <div class="detail_close">
+                <a onclick=Newcastle()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>잉글랜드 타인 위어 주 뉴캐슬어폰타인을 연고로 잉글랜드 1부 리그 4회, 2부 리그(챔피언십 포함) 4회, FA컵 6회의 우승 경력이 있으며, 유럽 대회에서의 가장 큰 성과는
+                1969년 인터시티스 페어스컵(현 UEFA 유로파리그)에서 우승한 것이다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>라파엘 베니테스</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>자말 라셀레스</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>세인트 제임스 파크</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Newcastle()">
+            <img src="img/England/Newcastle United.png">
+            <span>Newcastle United</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain10">
+            <div class="detail_top">
+              <h2>Burnley</h2>
+              <div class="detail_close">
+                <a onclick=Burnley()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>번리에 연고로 1920-21시즌과 1959-60시즌에 1부리그 우승을 차지한적이 있으며 1914년 리버풀을 꺾고 FA컵 우승도 차지했다. 1부 리그에서 4부 리그까지 잉글랜드 프로축구
+                모든 레벨에서 우승 기록을 가지고 있는 클럽 중 하나이기도 하다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>션 디쉬</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>톰 히튼</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>터프 무어</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Burnley()">
+            <img src="img/England/Burnley.png">
+            <span>Burnley</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain11">
+            <div class="detail_top">
+              <h2>Crystal Palace</h2>
+              <div class="detail_close">
+                <a onclick=Crystal()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p> 런던에 소재한 자치구인 크로이던 구를 연고로 현재 프리미어리그에 속해 있으며 1905년에 창립되었다. 2013년 카디프 시티, 헐시티와 함께 프리미어리그로 승격되었다. 유스출신에는
+                첼시의 빅터 모지스선수와 윌프리드자하 등있다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>로이 호지슨</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>루카 밀리보예비치</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>셀허스트 파크</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Crystal()">
+            <img src="img/England/Crystal Palace.png">
+            <span>Crystal Palace</span>
+          </a>
+        </li>
+
+
+        <li>
+          <div class="detail" id="team_explain12">
+            <div class="detail_top">
+              <h2>AFC Bournemouth</h2>
+              <div class="detail_close">
+                <a onclick=Bournemouth()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>잉글랜드 도싯주 본머스를 본거지로 2014-15 시즌 풋볼 리그 챔피언십에서 우승 함으로써, 2015-16 시즌을 앞두고 그토록 꿈에 그리던 잉글랜드 프리미어리그로 승격되었다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>에디 하우</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>사이먼 프란시스</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>바이탈리티 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Bournemouth()">
+            <img src="img/England/Bournemouth.png">
+            <span>AFC Bournemouth</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain13">
+            <div class="detail_top">
+              <h2>Watford</h2>
+              <div class="detail_close">
+                <a onclick=Watford()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>하트퍼드셔주 왓퍼드를 연고로 1881년에 창단해 2~3부 리그를 오가다가 1982년에 1부 리그로 승격하여 승격 첫 시즌인 1982-83 시즌에서 2위에 올랐다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>하비 그라시아</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>트로이 디니</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>비커리지 로드</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Watford()">
+            <img src="img/England/Watford.png">
+            <span>Watford</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain14">
+            <div class="detail_top">
+              <h2>Brighton & Hove Albion</h2>
+              <div class="detail_close">
+                <a onclick=Brighton()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>이스트서식스주 브라이턴 호브를 연고지로 팀의 닉네임은 "Seagulls"로 갈매기란 뜻이다. 1970년대에는 잠시 전부 흰색으로 된 유니폼을 입었지만 전통적으로 파란색과 흰색의 세로줄
+                유니폼을 입는다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>크리스 휴턴</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>브루노 살토르</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>팔머 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Brighton()">
+            <img src="img/England/Brighton & Hove Albion.png">
+            <span>Brighton & Hove Albion</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain15">
+            <div class="detail_top">
+              <h2>West Ham United</h2>
+              <div class="detail_close">
+                <a onclick=West()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>동런던에 위치한 런던 스타디움을 근거로 프리미어리그 2010-11 시즌에서 20위에 머물러 강등을 당했지만 2011-12시즌 풋볼 리그 챔피언십에서 3위를 기록했고, 승격
+                플레이오프에서 우승을 차지, 1시즌만에 프리미어리그로 복귀하게 되었다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>마누엘 펠레그리니</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>마크 노블</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>런던 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="West()">
+            <img src="img/England/West Ham United.png">
+            <span>West Ham United</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain16">
+            <div class="detail_top">
+              <h2>Huddersfield</h2>
+              <div class="detail_close">
+                <a onclick=Huddersfield()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p> 웨스트요크셔주의 허더즈필드에 연고로 1926년 최초로 3회 연속 리그 우승을 차지한 팀이 되었다. 전통적으로 파란색과 흰색이 세로로 교차하는 셔츠와 하얀색 바지를 유니폼으로
+                사용해왔다. 주요 라이벌팀은 리즈 유나이티드와 브래드퍼드 시티이다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>얀 지베어트</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>토미 스미스</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>커클리즈 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Huddersfield()">
+            <img src="img/England/Huddersfield.png">
+            <span>Huddersfield</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain17">
+            <div class="detail_top">
+              <h2>Cardiff City</h2>
+              <div class="detail_close">
+                <a onclick=Cardiff()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p> 웨일스의 카디프를 연고로 1927년 FA컵 우승이었으며, 아스널과의 결승전은 BBC 라디오로 생중계된 최초의 축구 경기로 알려져 있다. 그리고 1967-68 시즌 UEFA 컵
+                위너스컵 4강에도 오른 적이 있다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>닐 워녹</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>션 모리슨</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>카디프 시티 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Cardiff()">
+            <img src="img/England/Cardiff_City.png">
+            <span>Cardiff City</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain18">
+            <div class="detail_top">
+              <h2>Wolverhampton</h2>
+              <div class="detail_close">
+                <a onclick=Wolverhampton()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>울버햄프턴을 연고로 1부리그에서 3번 우승했고, 유럽 대회에서의 최고 성적은 1972년 UEFA컵 (현 UEFA 유로파리그) 준우승이다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>누누 이스피리투 산투</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>코너 코디</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>몰리뉴 스타디움</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Wolverhampton()">
+            <img src="img/England/Wolverhampton.png">
+            <span>Wolverhampton</span>
+          </a>
+        </li>
+
+        <li>
+          <div class="detail" id="team_explain19">
+            <div class="detail_top">
+              <h2>Fulham</h2>
+              <div class="detail_close">
+                <a onclick=Fulham()>
+                  <img src="img/close.png" alt="창닫기" style="width:20px; height:20px; padding:0px;">
+                </a>
+              </div>
+              <p>그레이터런던 풀럼을 연고로 2부 리그 우승 1회와 3부 리그 우승 3회, UEFA 인터토토컵 우승 1회의 기록을 가지고 있으며 메이저 대회에서의 우승 경력은 없다.</p>
+            </div>
+            <div class="detail_low">
+              <div class="detail_low_post">
+                <dl>
+                  <dt>감독:</dt>
+                  <dd>클라우디오 라니에리</dd>
+                </dl>
+                <dl>
+                  <dt>리그:</dt>
+                  <dd>프리미어리그</dd>
+                </dl>
+                <dl>
+                  <dt>주장:</dt>
+                  <dd>톰 케어니</dd>
+                </dl>
+                <dl>
+                  <dt>경기장:</dt>
+                  <dd>크레이븐 코티지</dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <a onclick="Fulham()">
+            <img src="img/England/Fulham_FC.png">
+            <span>Fulham</span>
+          </a>
+        </li>
+    </div>
+  </div>
+</section>
+
+<div class="upbtn" onclick="goTop()">
+    <div></div>
+</div>
+
+<% include ./footer.ejs %>
+</body>
+
+</html>

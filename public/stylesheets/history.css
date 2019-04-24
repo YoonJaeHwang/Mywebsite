@@ -1,0 +1,122 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+  margin: 0px;
+  padding: 0px;
+}
+
+h3 {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 40px;
+  color: #000000;
+}
+
+h4 {
+  font-family: 'Jua', sans-serif;
+  font-size: 20px;
+  color: #111111;
+}
+
+.History_title {
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Gugi', cursive;
+}
+
+.contents_container {
+  width: 100%;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents_container_text h2 {
+  color: black;
+  border-bottom: 1px solid #CCC;
+  font-family: 'Jua', sans-serif;
+}
+
+.main_text {
+  color: #0000008a;
+}
+
+.main_text p {
+  font-family: 'Jua', sans-serif;
+}
+
+.space {
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width:1080px) {
+  /* 제목 좌,우 선긋기 */
+  .History_title {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.35);
+    font-size: 12px;
+    margin: 8px 0px;
+  }
+
+  .History_title::before,
+  .History_title::after {
+    content: "";
+    flex-grow: 1;
+    background: rgba(0, 0, 0, 0.35);
+    height: 1px;
+    margin: 0px 16px;
+  }
+
+  .contents_container_text {
+    margin: 30px 10px 0px;
+  }
+
+  .contents_container_text h2 {
+    padding: 5px;
+    font-size: 22px;  
+  }
+}
+
+@media screen and (min-width: 1081px) {
+  .History_title {
+    margin-top: 100px;
+  }
+
+  .contents_container_text h2 {
+    padding: 10px;
+    margin: 30px 170px 20px 170px;
+    font-size: 40px;
+  }
+
+  .main_text {
+    margin: 40px 200px 16px 200px;
+  }
+
+  .main_text p {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Please Sign up</title>
+  <link rel="shortcut icon" href="img/if_Locked-Cloud_379456.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="stylesheets/sign_up.css">
+  <link href="https://fonts.googleapis.com/css?family=ABeeZee|Jua|Gugi|Do+Hyeon" rel="stylesheet">
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script type="text/javascript" src="javascripts/sign_up.js"></script>
+</head>
+
+<body>
+  <form class="sign_up" action="/member" method="post" name="signup">
+    <div class="prev">
+      <a href="javascript:history.back(-1)">
+        <img src="img/back.png">
+      </a>
+    </div>
+
+    <div class="sign_up_title">
+      <span>Create your Account</span>
+    </div>
+    
+    <div class="sign_up_id">
+      <input class="id" id="id" size="15" name="my_id" placeholder="Username" autocomplete="off">
+    </div>
+
+    <div class="sign_up_pw">
+      <input class="pw" id="pw" type="password" size="15" name="my_pw" maxlength="15" placeholder="Password">
+    </div>
+
+    <div class="sign_up_rp">
+      <input class="rp" id="rp" type="password" name="my_rp" maxlength="15" placeholder="Reconfirm Password">
+    </div>
+
+    <div class="sign_up_mail">
+      <input class="mail" id="mail" type="text" name="my_email" placeholder="E-mail" autocomplete="off">
+    </div>
+
+    <div class="sign_up_phonenumber">
+      <input class="pn" id="pn" type="text" name="my_num" placeholder="Phone Number" autocomplete="off">
+    </div>
+
+    <div class="sign_up_join">
+      <button class="join" id="join" onclick="Sign_up();">Sign Up</button>
+    </div>
+  </form>
+</body>
+
+</html>

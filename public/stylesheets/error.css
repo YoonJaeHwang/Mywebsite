@@ -1,0 +1,83 @@
+/* 모바일용 */
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  height: 100%;
+}
+
+.error {
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  margin: auto;
+}
+
+.error_img img {
+  width: 110px;
+}
+
+.error_number h1 {
+  margin: 0;
+  font-family: 'Exo', sans-serif;
+  font-size: 90px;
+  color: #FE2E64;
+  height: 100px;
+}
+
+.error_text>.error_text_title {
+  font-size: 25px;
+  font-family: 'Gugi', cursive;
+}
+
+.error_text1>.error_text1_subtitle {
+  font-size: 8px;
+  font-family: 'Gugi', cursive;
+  color: #BDBDBD;
+}
+
+/* pc용 css */
+@media all and (min-width:960px) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    display: flex;
+    height: 100%;
+  }
+
+  .error {
+    align-items: center;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+  }
+
+  .error_img img {
+    width: 210px;
+  }
+
+  .error_number h1 {
+    margin: 0;
+    font-family: 'Exo', sans-serif;
+    font-size: 180px;
+    color: #FE2E64;
+    height: 220px;
+  }
+
+  .error_text>.error_text_title {
+    font-size: 50px;
+    font-family: 'Gugi', cursive;
+  }
+
+  .error_text1>.error_text1_subtitle {
+    font-size: 14px;
+    font-family: 'Gugi', cursive;
+    color: #BDBDBD;
+  }
+}

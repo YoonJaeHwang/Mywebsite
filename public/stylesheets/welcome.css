@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+  }
+
+  body {
+    max-width: 100%;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    height: 100%;
+  }
+
+  .Login {
+    align-items: center;
+    margin: auto;
+  }
+
+  .Login_enter {
+    cursor: pointer;
+    display: inline-flex;
+  }
+
+  .enter p {
+    font-family: 'Nanum Gothic Coding', monospace;
+  }
+
+  @media screen and (max-width: 767px) {
+    .enter {
+      width: 30vw;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .Login_text {
+      font-size: 3vw;
+    }
+
+    .Login_enter {
+      font-size: 1vw;
+    }
+
+    .enter {
+      width: 20vw;
+    }
+
+    .enter p {
+      font-size: 20px;
+    }
+
+    .enter p:hover {
+      color: #2EFEC8;
+    }
+  }

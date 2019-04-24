@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Jua|Gugi|Nanum+Gothic+Coding" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/ranking.css">
+    <link rel="stylesheet" href="stylesheets/basic.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="javascripts/menu.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#headers").load("header.html"); // 원하는 파일 경로를 삽입
+            $("#footers").load("footer.html"); // 추가 인클루드를 원할 경우 추가
+        });
+    </script>
+    <title>UEFA</title>
+</head>
+
+<body>
+    <div id="headers"></div>
+    <% include ./header.ejs %>
+
+    <section>
+        <div class="uefa_explain">
+            <div class="uefa_explain_sort">
+                <div class="uefa_slideshow" onclick="location.href = '/team_r'">
+                    <img class="uefa_image" src="img/UEFA/champions_t.jpg">
+                    <div class="text">
+                        <h1>Team Rancking</h1>
+                        <p>들어가기</p>
+                    </div>
+                </div>
+                <div class="uefa_slideshow" onclick="location.href = '/player_r'">
+                    <img class="uefa_image" src="img/UEFA/europa-league.jpg">
+                    <div class="text">
+                            <h1>Player Rancking</h1>
+                            <p>들어가기</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footers"></footer>
+    <% include ./footer.ejs %>
+</body>
+
+</html>

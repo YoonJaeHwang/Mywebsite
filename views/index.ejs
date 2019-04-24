@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Jua|Gugi|Nanum Gothic|Archivo+Narrow" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/index.css">
+  <link rel="stylesheet" href="stylesheets/basic.css">
+  <link rel="stylesheet" href="stylesheets/footer.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/menu.js"></script>
+
+  <title>Home</title>
+</head>
+
+<body>
+  <% include ./header.ejs %>
+
+  <section>
+    <div class="Home_contents">
+      <div class="premier_contents">
+        <div class="premier_image">
+          <a href="/about">
+            <img src="img/index/PremierLeagueLogo.jpg" alt="프리미어리그">
+          </a>
+        </div>
+        <div class="premier_header">
+          <h1>
+            <a href="/about" style="color: black;">2018/2019 Premier League</a>
+          </h1>
+        </div>
+        <div class="premier_section">
+          <p>The Premier League가 운영하는 축구리그</p>
+        </div>
+        <div class="premier_footer">
+          <a href="/about">read more</a>
+        </div>
+      </div>
+
+      <div class="premier_contents">
+        <div class="premier_image">
+          <a href="/team">
+            <img src="img/index/League_team.jpg" alt="프리미어리그팀">
+          </a>
+        </div>
+        <div class="premier_header">
+          <h1>
+            <a href="/team" style="color: black;">2018/2019 Premier League Team</a>
+          </h1>
+        </div>
+        <div class="premier_section">
+          <p>프리미어리그에서 20개팀들이 우승하기위해 경쟁하는데...</p>
+        </div>
+        <div class="premier_footer">
+          <a href="/team">read more</a>
+        </div>
+      </div>
+
+      <div class="premier_contents">
+        <div class="premier_image">
+          <a href="/history">
+            <img src="img/index/history.jpg" alt="역사">
+          </a>
+        </div>
+        <div class="premier_header">
+          <h1>
+            <a href="/history" style="color: black;">History</a>
+          </h1>
+        </div>
+        <div class="premier_section">
+          <p>초창기 약 30년 가까이는 럭비나 크리켓 또는 조정이나 폴로같은 여러 스포츠에 밀려났으며..</p>
+        </div>
+        <div class="premier_footer">
+          <a href="/history">read more</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="contents">
+      <div class="premier_contents">
+        <div class="premier_image">
+          <a href="/ranking">
+            <img src="img/index/Champion.jpg" alt="랭킹">
+          </a>
+        </div>
+        <div class="premier_header">
+          <h1>
+            <a href="/ranking" style="color: black;">Ranking</a>
+          </h1>
+        </div>
+        <div class="premier_section">
+          <p>2018/2019 프리미어리그 우승팀과 득점왕은...</p>
+        </div>
+        <div class="premier_footer">
+          <a href="/ranking">read more</a>
+        </div>
+      </div>
+
+      <div class="premier_contents">
+        <div class="premier_image">
+          <a href="/sign_in">
+            <img src="img/index/login_background.jpg" alt="로그인">
+          </a>
+        </div>
+        <div class="premier_header">
+          <h1>
+            <a href="/sign_in" style="color: black;">Sign In</a>
+          </h1>
+        </div>
+        <div class="premier_section">
+          <p>로그인 좀...</p>
+        </div>
+        <div class="premier_footer">
+          <a href="/sign_in">read more</a>
+        </div>
+      </div>
+
+      <div class="premier_contents">
+        <div class="premier_image">
+          <a href="https://www.premierleague.com/">
+            <img src="img/UEFA/Champions.jpg" alt="챔피언스리그">
+          </a>
+        </div>
+        <div class="premier_header">
+          <h1>
+            <a href="https://www.premierleague.com/" style="color: black;">Premier League official</a>
+          </h1>
+        </div>
+        <div class="premier_section">
+          <p>프리미어리그를 더 알고싶으면 공식사이트로~</p>
+        </div>
+        <div class="premier_footer">
+          <a href="https://www.premierleague.com/">read more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="upbtn" onclick="goTop()">
+    <div></div>
+  </div>
+
+  <% include ./footer.ejs %>
+</body>
+
+</html>

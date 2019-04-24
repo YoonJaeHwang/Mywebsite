@@ -1,0 +1,192 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+button,
+select {
+  margin: 0px;
+  padding: 0px;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  height: 70px;
+  top: 0;
+  background-color: white;
+}
+
+.upbtn {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background: var(--bgc_white);
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.upbtn>div {
+  width: 90%;
+  height: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  filter: invert(0%);
+  background: url("../img/up-arrow.png  ");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+   
+@media screen and (max-width:1080px) {
+  header {
+    width: 100%;
+    min-width: 320px;
+  }
+
+  .header {
+    display: none;
+  }
+  
+  .top_logo {
+    float: left;
+    margin: 19px 0 0 15px;
+    font-family: 'Gugi', cursive;
+    color: black;
+  }
+  
+  .util {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+  }
+
+  .util a img {
+    margin-top: 5px;
+  }
+
+  .gnb_wrap {
+    position: absolute;
+    left: 0;
+    top: 68px;
+    width: 100%;
+    min-width: 320px;
+    background-color: #0B0B3B;
+    color: white;
+    display: none;
+    z-index: 11;
+  }
+
+  .main li {
+    position: relative;
+    border-bottom: 1px solid white;
+  }
+
+  .main li a {
+    display: block;
+    height: 30px;
+    padding: 15px 0 0px 20px;
+    color: #fff;
+    font-family: 'Gugi', cursive;
+  }
+
+  .main li img {
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    height: 20px;
+    cursor: pointer;
+    width: 20px;
+  }
+}
+
+@media screen and (min-width: 1081px) {
+  .header {
+    display: flex;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    position: fixed;
+    transition: .2s;
+    z-index: 11;
+    background-color: white;
+  }
+
+  .header.shown {
+    background-color: #0B0B3B;
+    color: white;
+  }
+
+  .header .menu_top {
+    align-items: center;
+  }
+
+  .header .menu .topic {
+    font-size: 30px;
+    padding: 0px 30px 0px 0px;
+  }
+
+  .menu_icon {
+    display: none;
+  }
+
+  .menu,
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu p,
+  .logo p {
+    padding: 2px 0;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .3s;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 20px;
+  }
+
+  .menu p:hover,
+  .logo p:hover {
+    color: #00FFBF;
+  }
+
+  .null {
+    flex: 1;
+  }
+
+  .top_nav {
+    display: none;
+  }
+}
